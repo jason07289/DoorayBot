@@ -43,16 +43,12 @@ app.use('/start', startRouter);
     router.post('/', function(req, res, next) { //POST 방식인 것이 중요.
     var today = new Date();   
 
-    let year = today.getFullYear(); // 년도
-    let month = today.getMonth() + 1;  // 월
-    let date = today.getDate();  // 날짜
-
     var end = new Date(today.getFullYear(),today.getMonth(),today.getDate(),18,00,00);
 
     var nt = today.getTime();
     var et = end.getTime();
-    console.log(nt);
-    console.log(et);
+    //console.log(nt);
+    //console.log(et);
 
     var sec =parseInt(et - nt) / 1000;
     var day  = parseInt(sec/60/60/24);
