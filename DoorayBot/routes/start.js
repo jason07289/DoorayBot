@@ -23,7 +23,7 @@ router.post('/', function (req, res, next) {
   if(sec<10&&sec>=0){sec="0"+sec;}
 
 
-  res.json({"text": "일하신지 "+hour + '시간 ' + min + '분 ' + sec +'초 됬네요. ^^'
+  res.json({"text": "일하신지 "+hour + '시간 ' + min + '분 ' + sec +'초 됐네요. ^^'
   , "responseType": "inChannel"
   });
 });
